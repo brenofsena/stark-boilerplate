@@ -1,8 +1,13 @@
 import React from 'react'
-import App from '../App'
 import renderer from 'react-test-renderer'
+import styled from 'styled-components'
+import 'jest-styled-components'
 
-test('Render app component', () => {
-  const component = renderer.create(<App />)
-  expect(component.toJSON()).toMatchSnapshot()
+const Button = styled.button`
+  color: red;
+`
+
+test('it works', () => {
+  const tree = renderer.create(<Button />).toJSON()
+  expect(tree).toMatchSnapshot()
 })

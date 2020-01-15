@@ -49,6 +49,7 @@
     "identity-obj-proxy": "^3.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "jest": "^24.9.0",
+    "jest-styled-components": "^7.0.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
     "postcss-discard-comments": "^4.0.2",
