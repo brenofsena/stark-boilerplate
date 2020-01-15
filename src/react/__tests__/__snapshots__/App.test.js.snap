@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render app component 1`] = `
+<article
+  className="hello-world"
+>
+  <h1
+    className="hello-world__title"
+  >
+    Hello World!
+  </h1>
+</article>
+`;
