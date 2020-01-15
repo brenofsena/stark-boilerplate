@@ -6,10 +6,6 @@ const StylelintPlugin = require('stylelint-webpack-plugin')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {
-  VueLoaderPlugin
-} = require('vue-loader')
-
 const config = require('./config.js')
 
 module.exports = {
@@ -23,10 +19,7 @@ module.exports = {
   entry: {
     polyfill: '@babel/polyfill',
     app: path.join(__dirname, 'src/js', 'index'),
-    components: [
-      path.join(__dirname, 'src/react', 'index'),
-      path.join(__dirname, 'src/vue', 'main')
-    ]
+    components: path.join(__dirname, 'src/react', 'index')
   },
   module: {
     rules: [{
@@ -112,7 +105,6 @@ module.exports = {
         quality: '65-90'
       }
     }),
-    new VueLoaderPlugin(),
     new StylelintPlugin({
       failOnError: false,
       configFile: path.resolve(__dirname, '.stylelintrc'),

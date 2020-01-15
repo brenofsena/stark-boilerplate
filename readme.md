@@ -140,7 +140,6 @@ $ yarn test:coverage
 ┃ ┃ ┣ 📜index.js
 ┃ ┣ 📂react
 ┃ ┣ 📂sass
-┃ ┗ 📂vue
 ┣ 📜.babelrc
 ┣ 📜.editorconfig
 ┣ 📜.eslintrc.js
@@ -166,7 +165,6 @@ $ yarn test:coverage
 - Babel
 - ES6+
 - React.js
-- Vue.js
 - SASS
 - PostCSS
 - Jest
