@@ -170,6 +170,7 @@ $ yarn test:coverage
 - PostCSS
 - Styled Components
 - Jest
+- Enzyme
 - ESLint
 - Stylelint
 - Commitlint
