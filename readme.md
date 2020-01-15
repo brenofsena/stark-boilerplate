@@ -132,6 +132,7 @@ $ yarn test:coverage
 ## Directory structure
 
 ```
+📦__mocks__ 
 📦build                       # Compiled and minified files
 📦dist                        # Compiled files
 📦src
@@ -148,6 +149,7 @@ $ yarn test:coverage
 ┣ 📜.stylelintrc
 ┣ 📜commitlint.config.js
 ┣ 📜config.js
+┣ 📜enzyme.config.js
 ┣ 📜jest.config.js
 ┣ 📜package.json
 ┣ 📜postcss.config.js

@@ -1,11 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it works 1`] = `
-.c0 {
-  color: red;
-}
-
-<button
-  className="c0"
-/>
-`;
+exports[`App should render correctly 1`] = `ShallowWrapper {}`;
