@@ -167,6 +167,7 @@ $ yarn test:coverage
 - React.js
 - SASS
 - PostCSS
+- Styled Components
 - Jest
 - ESLint
 - Stylelint
