@@ -135,10 +135,9 @@ $ yarn test:coverage
 📦build                       # Compiled and minified files
 📦dist                        # Compiled files
 📦src
+┃ ┣ 📂components
 ┃ ┣ 📂images
 ┃ ┣ 📂js
-┃ ┃ ┣ 📜index.js
-┃ ┣ 📂react
 ┃ ┣ 📂sass
 ┣ 📜.babelrc
 ┣ 📜.editorconfig
