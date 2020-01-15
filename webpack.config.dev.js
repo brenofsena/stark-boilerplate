@@ -8,8 +8,8 @@ module.exports = merge(common, {
   mode: 'development',
   output: {
     path: ROOT_PATH,
-    filename: `js/[name].bundle.js`,
-    chunkFilename: `js/[name].bundle.js`,
+    filename: `[name].bundle.js`,
+    chunkFilename: `[name].bundle.js`,
     publicPath: '/'
   },
   devServer: {

@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const StylelintPlugin = require('stylelint-webpack-plugin')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const WebpackPwaManifest = require('webpack-pwa-manifest')
+const OfflinePlugin = require('offline-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = require('./config.js')
 
@@ -52,23 +53,9 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'images/[name].[ext]',
-            useRelativePath: true
-          }
-        }]
-      },
-      {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: 'fonts/[name].[ext]',
-            useRelativePath: true
-          }
+          loader: 'file-loader'
         }]
       },
       {
@@ -96,8 +83,8 @@ module.exports = {
     }),
     new FriendlyErrorsWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].bundle.css',
-      chunkFilename: 'css/[name].bundle.css',
+      filename: '[name].bundle.css',
+      chunkFilename: '[name].bundle.css',
       ignoreOrder: true
     }),
     new ImageminPlugin({
@@ -132,8 +119,24 @@ module.exports = {
         sizes: [96, 128, 192, 256, 384, 512, 1024]
       }]
     }),
+    new OfflinePlugin({
+      safeToUseOptionalCaches: true,
+      caches: {
+        main: ['index.html'],
+        additional: ['*.js?*']
+      },
+      navigateFallbackURL: '/',
+      autoUpdate: true,
+      responseStrategy: 'cache-first',
+      ServiceWorker: {
+        events: true
+      },
+      AppCache: {
+        events: true
+      }
+    }),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: path.resolve(__dirname, 'src/index.html'),
       inject: true
     })
   ]

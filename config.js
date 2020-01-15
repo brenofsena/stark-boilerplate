@@ -4,8 +4,8 @@ const config  = {
     name: "Stark Boilerplate",
     short_name: "Stark Boilerplate",
     description: "A simple boilerplate for React, Vue and ES6+ applications",
-    background_color: "#000",
-    theme_color: "#000",
+    background_color: "#cc9d54",
+    theme_color: "#cc9d54",
     icon: "src/images/stark.png"
   }
 }
