@@ -151,6 +151,7 @@ $ yarn test:coverage
 ┣ 📜config.js
 ┣ 📜enzyme.config.js
 ┣ 📜jest.config.js
+┣ 📜license
 ┣ 📜package.json
 ┣ 📜postcss.config.js
 ┣ 📜readme.md
