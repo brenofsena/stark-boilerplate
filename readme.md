@@ -176,3 +176,5 @@ $ yarn test:coverage
 - Stylelint
 - Commitlint
 - PWA
+
+[MIT License](./license) (c) Breno Sena
