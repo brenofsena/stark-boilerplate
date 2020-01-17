@@ -11,8 +11,8 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js --mode production --progress",
     "lint:js": "eslint ./src/",
     "fix:js": "eslint ./src/ --fix",
-    "lint:scss": "stylelint ./src/sass/**/*.scss",
-    "fix:scss": "stylelint ./src/sass/**/*.scss --fix",
+    "lint:scss": "stylelint ./src/**/*.scss",
+    "fix:scss": "stylelint ./src/**/*.scss --fix",
     "lint": "npm run lint:js && npm run lint:scss"
   },
   "author": "Breno Sena",

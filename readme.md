@@ -132,13 +132,13 @@ $ yarn test:coverage
 ## Directory structure
 
 ```
-📦__mocks__ 
+📂__mocks__
 📦build                       # Compiled and minified files
 📦dist                        # Compiled files
-📦src
-┃ ┣ 📂components
+📂src
 ┃ ┣ 📂images
 ┃ ┣ 📂js
+┃ ┣ 📂react
 ┃ ┣ 📂sass
 ┣ 📜.babelrc
 ┣ 📜.editorconfig

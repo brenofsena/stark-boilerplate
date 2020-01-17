@@ -20,7 +20,7 @@ module.exports = {
   entry: {
     polyfill: '@babel/polyfill',
     app: path.join(__dirname, 'src/js', 'index'),
-    components: path.join(__dirname, 'src/components', 'index')
+    components: path.join(__dirname, 'src/react', 'index')
   },
   module: {
     rules: [{
@@ -37,10 +37,6 @@ module.exports = {
           loader: 'babel-loader'
         }],
         exclude: /node_modules/
-      },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader'
       },
       {
         test: /\.svg$/,
@@ -95,7 +91,7 @@ module.exports = {
     new StylelintPlugin({
       failOnError: false,
       configFile: path.resolve(__dirname, '.stylelintrc'),
-      context: path.resolve(__dirname, 'src/sass'),
+      context: path.resolve(__dirname, 'src'),
       files: '**/*.scss',
       syntax: 'scss',
       failOnError: false,

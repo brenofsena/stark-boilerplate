@@ -4,15 +4,19 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jest/recommended'
   ],
-  parserOptions: {
-    ecmaVersion: 2015,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
     }
   },
   rules: {
     'no-extra-semi': 0,
+    'no-undef': 0,
     semi: 0
   },
   env: {
