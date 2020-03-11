@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
-import StarkLogo from '../images/stark.png'
+import StarkLogo from './images/stark.png'
 
 const Wrapper = styled.section`
 	padding: 4em;

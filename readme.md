@@ -9,13 +9,6 @@
 - [Node.js](https://nodejs.org/) - `^10.0.0`
 - [NPM](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-```sh
-$ npm i -g webpack webpack-cli
-
-# or
-
-$ yarn add global webpack webpack-cli
-```
 
 ## Run project
 
@@ -28,23 +21,11 @@ $ cd stark-boilerplate
 
 $ npm install
 
-# or
-
-$ yarn install
-
 # Run in development mode
 $ npm start
 
-# or
-
-$ yarn start
-
 # Generate build files
 $ npm run build
-
-# or
-
-$ yarn build
 ```
 
 ## Lint
@@ -55,37 +36,17 @@ $ yarn build
 # ESLint
 $ npm run lint:js
 
-# or
-
-$ yarn lint:js
-
 # ESLint fix
 $ npm run fix:js
-
-# or
-
-$ yarn fix:js
 
 # Stylelint
 $ npm run lint:scss
 
-# or
-
-$ yarn lint:scss
-
 # Stylelint fix
 $ npm run fix:scss
 
-# or
-
-$ yarn fix:scss
-
 # Lint JS and SCSS
 $ npm run lint
-
-# or
-
-$ yarn lint
 ```
 
 ## Tests
@@ -96,23 +57,11 @@ $ yarn lint
 # Tests
 $ npm run test
 
-# or
-
-$ yarn test
-
 # Watch tests
 $ npm run test:watch
 
-# or
-
-$ yarn test:watch
-
 # Code coverage
 $ npm run test:coverage
-
-# or
-
-$ yarn test:coverage
 ```
 
 ## Commits
@@ -136,10 +85,12 @@ $ yarn test:coverage
 📦build                       # Compiled and minified files
 📦dist                        # Compiled files
 📂src
+┃ ┣ 📂__tests__
 ┃ ┣ 📂images
-┃ ┣ 📂js
-┃ ┣ 📂react
 ┃ ┣ 📂sass
+┣ ┣ 📜app.js
+┣ ┣ 📜index.html
+┣ ┣ 📜index.js
 ┣ 📜.babelrc
 ┣ 📜.editorconfig
 ┣ 📜.eslintrc.js

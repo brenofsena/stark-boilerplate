@@ -19,8 +19,7 @@ module.exports = {
   },
   entry: {
     polyfill: '@babel/polyfill',
-    app: path.join(__dirname, 'src/js', 'index'),
-    components: path.join(__dirname, 'src/react', 'index')
+    app: path.join(__dirname, 'src', 'index')
   },
   module: {
     rules: [{
