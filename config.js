@@ -1,4 +1,4 @@
-const config  = {
+const config = {
   sitename: "Stark",
   pwa: {
     name: "Stark Boilerplate",
@@ -8,6 +8,6 @@ const config  = {
     theme_color: "#cc9d54",
     icon: "src/images/stark.png"
   }
-}
+};
 
-module.exports = config
+module.exports = config;
