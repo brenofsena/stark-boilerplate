@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import StarkLogo from "./images/stark.png";
 
@@ -18,18 +18,10 @@ const Image = styled.img`
   display: block;
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <Image
-          src={StarkLogo}
-          alt="Stark Boilerplate"
-          title="Stark Boilerplate"
-        />
-      </Wrapper>
-    );
-  }
-}
+const App = () => (
+  <Wrapper>
+    <Image src={StarkLogo} alt="Stark Boilerplate" title="Stark Boilerplate" />
+  </Wrapper>
+);
 
 export default App;
