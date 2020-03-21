@@ -46,8 +46,8 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "file-loader": "^5.0.2",
     "friendly-errors-webpack-plugin": "^1.7.0",
-    "fs": "0.0.1-security",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.3",
     "identity-obj-proxy": "^3.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "jest": "^24.9.0",
@@ -78,7 +78,6 @@
     "webpack-pwa-manifest": "^4.1.1"
   },
   "dependencies": {
-    "husky": "^4.0.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.0"
