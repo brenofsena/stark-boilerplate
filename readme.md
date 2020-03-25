@@ -4,11 +4,10 @@
 
 > Stark Boilerplate
 
-## Install NodeJS, NPM (or Yarn) and Webpack
+## Install NodeJS and NPM (or Yarn)
 
 - [Node.js](https://nodejs.org/) - `^10.0.0`
-- [NPM](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-
+- [NPM](https://www.npmjs.com/)
 
 ## Run project
 
