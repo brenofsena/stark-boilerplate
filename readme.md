@@ -35,14 +35,8 @@ $ npm run build
 # ESLint
 $ npm run lint:js
 
-# ESLint fix
-$ npm run fix:js
-
 # Stylelint
 $ npm run lint:scss
-
-# Stylelint fix
-$ npm run fix:scss
 
 # Lint JS and SCSS
 $ npm run lint
