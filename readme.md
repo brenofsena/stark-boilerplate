@@ -77,13 +77,13 @@ $ npm run test:ci
 📂__mocks__
 📦build                       # Compiled and minified files
 📦dist                        # Compiled files
+📂public                      # Static files
 📂src
 ┃ ┣ 📂__tests__
 ┃ ┣ 📂images
 ┃ ┣ 📂style
-┣ ┣ 📜app.js
-┣ ┣ 📜index.html
-┣ ┣ 📜index.js
+┣ ┣ 📜app.jsx
+┣ ┣ 📜index.jsx
 ┣ 📜.babelrc
 ┣ 📜.editorconfig
 ┣ 📜.eslintignore

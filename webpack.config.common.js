@@ -12,54 +12,54 @@ const config = require("./config.js");
 module.exports = {
   watchOptions: {
     aggregateTimeout: 300,
-    poll: 1000
+    poll: 1000,
   },
   stats: {
-    warnings: false
+    warnings: false,
   },
   entry: {
     polyfill: "@babel/polyfill",
-    app: path.join(__dirname, "src", "index")
+    app: path.join(__dirname, "src", "index"),
   },
   module: {
     rules: [
       {
         enforce: "pre",
-        test: /\.js$/,
+        test: /\.js(x?)$/,
         use: [
           {
-            loader: "eslint-loader"
-          }
+            loader: "eslint-loader",
+          },
         ],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
-        test: /\.js$/,
+        test: /\.js(x?)$/,
         use: [
           {
-            loader: "babel-loader"
-          }
+            loader: "babel-loader",
+          },
         ],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.svg$/,
         use: [
           {
-            loader: "babel-loader"
+            loader: "babel-loader",
           },
           {
-            loader: "react-svg-loader"
-          }
-        ]
+            loader: "react-svg-loader",
+          },
+        ],
       },
       {
         test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
         use: [
           {
-            loader: "file-loader"
-          }
-        ]
+            loader: "file-loader",
+          },
+        ],
       },
       {
         test: /\.scss$/,
@@ -68,32 +68,35 @@ module.exports = {
           "css-loader?url=false",
           "postcss-loader",
           {
-            loader: "sass-loader"
+            loader: "sass-loader",
           },
           {
             loader: "sass-resources-loader",
             options: {
-              resources: "./src/sass/resources.scss"
-            }
-          }
-        ]
-      }
-    ]
+              resources: "./src/style/resources.scss",
+            },
+          },
+        ],
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx", ".scss"],
   },
   plugins: [
     new WebpackCleanupPlugin({
-      cleanOnceBeforeBuildPatterns: ["dist", "build"]
+      cleanOnceBeforeBuildPatterns: ["dist", "build"],
     }),
     new FriendlyErrorsWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].bundle.css",
       chunkFilename: "[name].bundle.css",
-      ignoreOrder: true
+      ignoreOrder: true,
     }),
     new ImageminPlugin({
       pngquant: {
-        quality: "65-90"
-      }
+        quality: "65-90",
+      },
     }),
     new StylelintPlugin({
       failOnError: false,
@@ -101,7 +104,7 @@ module.exports = {
       context: path.resolve(__dirname, "src"),
       files: "**/*.scss",
       syntax: "scss",
-      quiet: false
+      quiet: false,
     }),
     new WebpackPwaManifest({
       name: config.pwa.name,
@@ -119,29 +122,29 @@ module.exports = {
       icons: [
         {
           src: path.resolve(config.pwa.icon),
-          sizes: [96, 128, 192, 256, 384, 512, 1024]
-        }
-      ]
+          sizes: [96, 128, 192, 256, 384, 512, 1024],
+        },
+      ],
     }),
     new OfflinePlugin({
       safeToUseOptionalCaches: true,
       caches: {
         main: ["index.html"],
-        additional: ["*.js?*"]
+        additional: ["*.js?*"],
       },
       navigateFallbackURL: "/",
       autoUpdate: true,
       responseStrategy: "cache-first",
       ServiceWorker: {
-        events: true
+        events: true,
       },
       AppCache: {
-        events: true
-      }
+        events: true,
+      },
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src/index.html"),
-      inject: true
-    })
-  ]
+      template: path.resolve(__dirname, "./public/index.html"),
+      inject: true,
+    }),
+  ],
 };

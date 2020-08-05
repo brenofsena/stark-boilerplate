@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
   ],
   parser: "babel-eslint",
   parserOptions: {
@@ -11,23 +11,23 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
       modules: true,
-      experimentalObjectRestSpread: true
-    }
+      experimentalObjectRestSpread: true,
+    },
   },
   rules: {
     "no-extra-semi": 0,
     "no-undef": 0,
-    semi: 0
+    semi: 0,
   },
   env: {
-    "jest/globals": true
+    "jest/globals": true,
   },
   globals: {
-    document: true
+    document: true,
   },
   settings: {
     react: {
-      version: require("./package.json").dependencies.react
-    }
-  }
+      version: "detect",
+    },
+  },
 };

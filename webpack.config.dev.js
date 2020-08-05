@@ -18,6 +18,7 @@ module.exports = merge(common, {
     compress: true,
     port: 3000,
     open: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    writeToDisk: true
   }
 });

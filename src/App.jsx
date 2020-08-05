@@ -4,7 +4,7 @@ import StarkLogo from "./images/stark.png";
 
 const Wrapper = styled.section`
   padding: 4em;
-  background: #cc9d54;
+  background: #f9f9f9;
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
