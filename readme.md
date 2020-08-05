@@ -60,7 +60,7 @@ $ npm run test
 $ npm run test:watch
 
 # Code coverage
-$ npm run test:coverage
+$ npm run test:ci
 ```
 
 ## Commits
@@ -86,13 +86,15 @@ $ npm run test:coverage
 📂src
 ┃ ┣ 📂__tests__
 ┃ ┣ 📂images
-┃ ┣ 📂sass
+┃ ┣ 📂style
 ┣ ┣ 📜app.js
 ┣ ┣ 📜index.html
 ┣ ┣ 📜index.js
 ┣ 📜.babelrc
 ┣ 📜.editorconfig
+┣ 📜.eslintignore
 ┣ 📜.eslintrc.js
+┣ 📜.huskyrc.json
 ┣ 📜.gitignore
 ┣ 📜.node-version
 ┣ 📜.npmrc
