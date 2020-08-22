@@ -1,25 +1,25 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/brenofsena/stark-boilerplate/master/src/images/stark.png" alt="Stark">
+<img src="./src/images/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
 </p>
 
 > Stark Boilerplate
 
-## Run project
+## Run
 
 ```sh
 # Clone repository
-$ git clone https://github.com/brenofsena/stark-boilerplate
+$ git clone https://github.com/brenofsena/stark-boilerplate my-project
 
 # Install dependencies
-$ cd stark-boilerplate
+$ cd my-project
 
-$ npm install
+$ yarn install
 
 # Run in development mode
-$ npm start
+$ yarn start
 
 # Generate build files
-$ npm run build
+$ yarn build
 ```
 
 ## Lint
@@ -28,28 +28,28 @@ $ npm run build
 # ~/stark-boilerplate
 
 # ESLint
-$ npm run lint:js
+$ yarn lint:js
 
 # Stylelint
-$ npm run lint:scss
+$ yarn lint:scss
 
 # Lint JS and SCSS
-$ npm run lint
+$ yarn lint
 ```
 
-## Tests
+## Test
 
 ```sh
 # ~/stark-boilerplate
 
 # Tests
-$ npm run test
+$ yarn test
 
 # Watch tests
-$ npm run test:watch
+$ yarn test:watch
 
 # Code coverage
-$ npm run test:ci
+$ yarn test:ci
 ```
 
 ## Commits
@@ -65,39 +65,6 @@ $ npm run test:ci
 `docs:` a change in the README or documentation
 
 `refactor:` a change in production code focused on readability, style and/or performance.
-
-## Directory structure
-
-```
-📂__mocks__
-📂src
-📂static
-┃ ┣ 📂__tests__
-┃ ┣ 📂images
-┃ ┣ 📂style
-┣ ┣ 📜app.jsx
-┣ ┣ 📜index.jsx
-┣ 📜.babelrc
-┣ 📜.editorconfig
-┣ 📜.eslintignore
-┣ 📜.eslintrc.js
-┣ 📜.gitignore
-┣ 📜.huskyrc.json
-┣ 📜.lintstagedrc.json
-┣ 📜.npmrc
-┣ 📜.prettierrc
-┣ 📜.stylelintrc.json
-┣ 📜config.js
-┣ 📜jest.config.js
-┣ 📜license
-┣ 📜package.json
-┣ 📜postcss.config.js
-┣ 📜jest.setup.js
-┣ 📜readme.md
-┣ 📜webpack.common.js
-┣ 📜webpack.dev.js
-┣ 📜webpack.prod.js
-```
 
 ## Built with
 
