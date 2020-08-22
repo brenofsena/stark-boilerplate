@@ -2,9 +2,9 @@
 <img src="./src/images/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
 </p>
 
-> Stark Boilerplate
+> ##  Stark Boilerplate
 
-## Run
+> ### Run
 
 ```sh
 # Clone repository
@@ -22,7 +22,7 @@ $ yarn start
 $ yarn build
 ```
 
-## Lint
+> ### Lint
 
 ```sh
 # ~/stark-boilerplate
@@ -37,7 +37,7 @@ $ yarn lint:scss
 $ yarn lint
 ```
 
-## Test
+> ### Test
 
 ```sh
 # ~/stark-boilerplate
@@ -52,7 +52,7 @@ $ yarn test:watch
 $ yarn test:ci
 ```
 
-## Commit
+> ### Commit
 
 `<type>[optional scope]: <description>`
 
@@ -66,7 +66,7 @@ $ yarn test:ci
 
 `refactor:` a change in production code focused on readability, style and/or performance.
 
-## Built with
+> ### Built with
 
 - Webpack
 - Babel
