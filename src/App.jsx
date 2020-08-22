@@ -5,6 +5,7 @@ import StarkLogo from './images/stark.png';
 const App = () => (
   <div className={Styles.wrapper}>
     <img
+      data-testid="image"
       className={Styles.image}
       src={StarkLogo}
       alt="Stark Boilerplate"

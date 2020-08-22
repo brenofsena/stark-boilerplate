@@ -72,6 +72,7 @@ $ npm run test:ci
 📂__mocks__
 📂src
 📂static
+┃ ┣ 📂__tests__
 ┃ ┣ 📂images
 ┃ ┣ 📂style
 ┣ ┣ 📜app.jsx
@@ -91,6 +92,7 @@ $ npm run test:ci
 ┣ 📜license
 ┣ 📜package.json
 ┣ 📜postcss.config.js
+┣ 📜jest.setup.js
 ┣ 📜readme.md
 ┣ 📜webpack.common.js
 ┣ 📜webpack.dev.js
@@ -106,6 +108,7 @@ $ npm run test:ci
 - PostCSS
 - CSS Modules
 - Jest
+- React Testing Library
 - Prettier
 - ESLint
 - Stylelint

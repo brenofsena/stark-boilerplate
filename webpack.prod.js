@@ -37,11 +37,7 @@ module.exports = merge(common, {
       filename: '[name].bundle.css',
       chunkFilename: '[name].bundle.css',
     }),
-    new ImageminPlugin({
-      pngquant: {
-        quality: '65-90',
-      },
-    }),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
     new WebpackPwaManifest({
       name: config.pwa.name,
       short_name: config.pwa.short_name,
