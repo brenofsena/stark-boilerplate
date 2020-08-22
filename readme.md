@@ -52,7 +52,7 @@ $ yarn test:watch
 $ yarn test:ci
 ```
 
-## Commits
+## Commit
 
 `<type>[optional scope]: <description>`
 
