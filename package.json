@@ -9,7 +9,7 @@
     "test:ci": "npm test -- --coverage",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.js --mode development --watch --progress",
     "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js --mode production --progress",
-    "lint:js": "eslint './src/**' --fix",
+    "lint:js": "eslint './src/**' --ext js,jsx --fix",
     "lint:scss": "stylelint ./src/**/*.scss --fix",
     "lint": "npm run lint:js && npm run lint:scss",
     "check": "npm-check -u -s"
