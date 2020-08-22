@@ -3,8 +3,8 @@ module.exports = {
     name: 'Stark Boilerplate',
     short_name: 'Stark Boilerplate',
     description: 'A simple boilerplate for React applications',
-    background_color: '#cc9d54',
-    theme_color: '#cc9d54',
+    background_color: '#f9f9f9',
+    theme_color: '#f9f9f9',
     icon: 'src/images/stark.png',
   },
 };
