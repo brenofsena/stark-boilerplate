@@ -1,0 +1,4 @@
+{
+  "*.{js,jsx}": ["npm run lint:js", "pretty-quick --staged", "npm run test"],
+  "*.{scss}": ["npm run lint:scss"]
+}

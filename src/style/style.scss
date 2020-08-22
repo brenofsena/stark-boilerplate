@@ -1,2 +1,19 @@
-@import "./core/reset";
-@import "./core/typography";
+@import './core/variables';
+@import './core/reset';
+@import './core/typography';
+
+.wrapper {
+  padding: 4em;
+  background: $bg;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  .image {
+    margin: 1em auto;
+    display: block;
+  }
+}

@@ -4,11 +4,6 @@
 
 > Stark Boilerplate
 
-## Install NodeJS and NPM (or Yarn)
-
-- [Node.js](https://nodejs.org/) - `^10.0.0`
-- [NPM](https://www.npmjs.com/)
-
 ## Run project
 
 ```sh
@@ -75,11 +70,8 @@ $ npm run test:ci
 
 ```
 📂__mocks__
-📦build                       # Compiled and minified files
-📦dist                        # Compiled files
-📂public                      # Static files
 📂src
-┃ ┣ 📂__tests__
+📂static
 ┃ ┣ 📂images
 ┃ ┣ 📂style
 ┣ ┣ 📜app.jsx
@@ -88,39 +80,34 @@ $ npm run test:ci
 ┣ 📜.editorconfig
 ┣ 📜.eslintignore
 ┣ 📜.eslintrc.js
-┣ 📜.huskyrc.json
 ┣ 📜.gitignore
-┣ 📜.node-version
+┣ 📜.huskyrc.json
+┣ 📜.lintstagedrc.json
 ┣ 📜.npmrc
-┣ 📜.stylelintrc
-┣ 📜commitlint.config.js
+┣ 📜.prettierrc
+┣ 📜.stylelintrc.json
 ┣ 📜config.js
-┣ 📜enzyme.config.js
 ┣ 📜jest.config.js
 ┣ 📜license
 ┣ 📜package.json
 ┣ 📜postcss.config.js
 ┣ 📜readme.md
-┣ 📜webpack.config.common.js
-┣ 📜webpack.config.dev.js
-┣ 📜webpack.config.prod.js
+┣ 📜webpack.common.js
+┣ 📜webpack.dev.js
+┣ 📜webpack.prod.js
 ```
 
 ## Built with
 
-- Node.js
 - Webpack
 - Babel
-- ES6+
-- React.js
+- React
 - SASS
 - PostCSS
-- Styled Components
+- CSS Modules
 - Jest
-- Enzyme
+- Prettier
 - ESLint
 - Stylelint
-- Commitlint
-- PWA
 
 [MIT License](./license) (c) Breno Sena

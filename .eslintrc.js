@@ -1,33 +1,30 @@
 module.exports = {
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jest/recommended",
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jest/recommended',
+    'prettier',
   ],
-  parser: "babel-eslint",
+  plugins: ['react', 'jest'],
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
       modules: true,
       experimentalObjectRestSpread: true,
     },
   },
-  rules: {
-    "no-extra-semi": 0,
-    "no-undef": 0,
-    semi: 0,
-  },
   env: {
-    "jest/globals": true,
-  },
-  globals: {
-    document: true,
+    browser: true,
+    amd: true,
+    node: true,
+    jest: true,
   },
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
   },
 };
