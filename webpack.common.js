@@ -1,10 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
-const WebpackPwaManifest = require('webpack-pwa-manifest');
-const OfflinePlugin = require('offline-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const config = require('./config.js');
 
 module.exports = {
   watchOptions: {
@@ -66,42 +63,6 @@ module.exports = {
       files: '**/*.scss',
       syntax: 'scss',
       quiet: false,
-    }),
-    new WebpackPwaManifest({
-      name: config.pwa.name,
-      short_name: config.pwa.short_name,
-      description: config.pwa.description,
-      background_color: config.pwa.background_color,
-      theme_color: config.pwa.theme_color,
-      start_url: '/',
-      prefer_related_applications: false,
-      orientation: 'portrait',
-      display: 'standalone',
-      crossorigin: 'use-credentials',
-      fingerprints: false,
-      publicPath: '/',
-      icons: [
-        {
-          src: path.resolve(config.pwa.icon),
-          sizes: [96, 128, 192, 256, 384, 512, 1024],
-        },
-      ],
-    }),
-    new OfflinePlugin({
-      safeToUseOptionalCaches: true,
-      caches: {
-        main: ['index.html'],
-        additional: ['*.js?*'],
-      },
-      navigateFallbackURL: '/',
-      autoUpdate: true,
-      responseStrategy: 'cache-first',
-      ServiceWorker: {
-        events: true,
-      },
-      AppCache: {
-        events: true,
-      },
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './static/index.html'),
