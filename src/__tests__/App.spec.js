@@ -5,6 +5,6 @@ import App from '../App';
 describe('App Component', () => {
   test('Should start correctly', () => {
     render(<App />);
-    expect(screen.getByTestId('image')).toBeInTheDocument();
+    expect(screen.getByTestId('logo')).toBeInTheDocument();
   });
 });
