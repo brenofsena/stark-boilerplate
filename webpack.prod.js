@@ -5,6 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
 const config = require('./config.js');
 
@@ -73,6 +74,9 @@ module.exports = merge(common, {
       AppCache: {
         events: true,
       },
+    }),
+    new FaviconsWebpackPlugin({
+      logo: './public/favicon.png',
     }),
   ],
   optimization: {

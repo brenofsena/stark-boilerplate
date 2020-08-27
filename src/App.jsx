@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from './style/style.scss';
-import StarkLogo from './images/stark.png';
+import StarkLogo from '../public/stark.png';
 
 const App = () => (
   <div className={Styles.wrapper}>

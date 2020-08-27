@@ -37,6 +37,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^23.6.0",
     "eslint-plugin-react": "^7.20.6",
+    "favicons-webpack-plugin": "^4.2.0",
     "file-loader": "^6.0.0",
     "git-commit-msg-linter": "^2.4.4",
     "html-webpack-plugin": "^4.3.0",
@@ -72,6 +73,7 @@
   },
   "dependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.2.0"
   }
 }

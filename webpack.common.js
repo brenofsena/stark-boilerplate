@@ -65,7 +65,7 @@ module.exports = {
       quiet: false,
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './static/index.html'),
+      template: path.resolve(__dirname, './index.html'),
       inject: true,
     }),
   ],

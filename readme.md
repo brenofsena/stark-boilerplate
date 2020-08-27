@@ -2,82 +2,41 @@
 <img src="./src/images/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
 </p>
 
-> ##  Stark Boilerplate
+> ## Stark Boilerplate
 
-> ### Run
+> ### Getting Started
 
 ```sh
 # Clone repository
 $ git clone https://github.com/brenofsena/stark-boilerplate my-project
 
-# Install dependencies
-$ cd my-project
-
+# install dependencies
 $ yarn install
 
-# Run in development mode
+# run the project
 $ yarn start
-
-# Generate build files
-$ yarn build
 ```
 
-> ### Lint
+> ### Commands
 
-```sh
-# ~/stark-boilerplate
-
-# ESLint
-$ yarn lint:js
-
-# Stylelint
-$ yarn lint:scss
-
-# Lint JS and SCSS
-$ yarn lint
-```
-
-> ### Test
-
-```sh
-# ~/stark-boilerplate
-
-# Tests
-$ yarn test
-
-# Watch tests
-$ yarn test:watch
-
-# Code coverage
-$ yarn test:ci
-```
-
-> ### Commit
-
-`<type>[optional scope]: <description>`
-
-`feat:` a feature that is visible for end users.
-
-`fix:` a bugfix that is visible for end users.
-
-`chore:` a change that doesn't impact end users (e.g. chances to CI pipeline)
-
-`docs:` a change in the README or documentation
-
-`refactor:` a change in production code focused on readability, style and/or performance.
+- `start`: runs your application on `localhost:3000`
+- `build`: creates the production build version
+- `test`: runs jest to test all components and pages
+- `test:watch`: runs jest in watch mode
 
 > ### Built with
 
 - Webpack
 - Babel
 - React
+- React Router DOM
 - SASS
-- PostCSS
-- CSS Modules
 - Jest
 - React Testing Library
-- Prettier
 - ESLint
-- Stylelint
+- StyleLint
+- Prettier
+- Husky
+- Lint Staged
 
 [MIT License](./license) (c) Breno Sena

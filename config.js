@@ -5,6 +5,6 @@ module.exports = {
     description: 'A simple boilerplate for React applications',
     background_color: '#f9f9f9',
     theme_color: '#f9f9f9',
-    icon: 'src/images/stark.png',
+    icon: 'public/stark.png',
   },
 };

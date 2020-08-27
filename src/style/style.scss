@@ -1,10 +1,13 @@
-@import './core/variables';
-@import './core/reset';
-@import './core/typography';
+@import './variables';
+@import './reset';
+
+body {
+  font-family: $font;
+}
 
 .wrapper {
   padding: 4em;
-  background: $bg;
+  background: $background;
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
