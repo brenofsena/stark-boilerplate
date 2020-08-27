@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./src/images/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
+<img src="./public/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
 </p>
 
 > ## Stark Boilerplate
