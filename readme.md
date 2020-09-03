@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/brenofsena/stark-boilerplate.svg?branch=master)](https://travis-ci.org/brenofsena/stark-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/brenofsena/stark-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/brenofsena/stark-boilerplate?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/brenofsena/stark-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/brenofsena/stark-boilerplate?targetFile=package.json)
 
 <p align="center">
@@ -50,5 +51,6 @@ $ yarn dev
 - Husky
 - Lint Staged
 - Travis CI
+- Coveralls
 
 [MIT License](./license) (c) Breno Sena
