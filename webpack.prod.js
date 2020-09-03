@@ -59,6 +59,9 @@ module.exports = merge(common, {
       inject: true,
       cache: true,
     }),
+    new DefinePlugin({
+      'process.env.API_URL': JSON.stringify(process.env.API_URL),
+    }),
   ],
   optimization: {
     minimize: true,

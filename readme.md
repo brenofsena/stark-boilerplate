@@ -35,6 +35,7 @@ $ yarn dev
 - React Router DOM
 - Styled Components
 - Polished
+- Apollo
 - Jest
 - React Testing Library
 - Cypress

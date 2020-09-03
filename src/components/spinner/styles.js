@@ -45,7 +45,7 @@ export const Spinner = styled.div`
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.secondary};
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 
     &:nth-child(1) {
