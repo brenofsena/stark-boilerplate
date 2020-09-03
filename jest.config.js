@@ -8,7 +8,7 @@ module.exports = {
     '!<rootDir>/src/**/index.js',
     '!<rootDir>/src/**/styles.js',
     '!<rootDir>/src/routes/**',
-    '!<rootDir>/src/services/graphql/client.js',
+    '!<rootDir>/src/services/graphql/**',
     '!<rootDir>/src/test/cypress/**',
     '!<rootDir>/src/utils/test/helpers/**',
   ],
