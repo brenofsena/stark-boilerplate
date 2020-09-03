@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./public/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
+<img src="./static/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
 </p>
 
 > ## Stark Boilerplate
@@ -11,18 +11,21 @@
 $ git clone https://github.com/brenofsena/stark-boilerplate my-project
 
 # install dependencies
-$ yarn install
+$ cd my-project && yarn install
 
 # run the project
-$ yarn start
+$ yarn dev
 ```
 
 > ### Commands
 
-- `start`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `test`: runs jest to test all components and pages
+- `start`: runs server on `localhost:3001`
+- `dev`: runs your application on `localhost:3333`
+- `build`: creates the production version
+- `test`: runs jest to test all components
 - `test:watch`: runs jest in watch mode
+- `test:ci`: runs jest for code coverage
+- `test:cypress`: runs cypress to tests e2e
 
 > ### Built with
 
@@ -30,13 +33,16 @@ $ yarn start
 - Babel
 - React
 - React Router DOM
-- SASS
+- Styled Components
+- Polished
 - Jest
 - React Testing Library
+- Cypress
 - ESLint
 - StyleLint
 - Prettier
 - Husky
 - Lint Staged
+- Travis CI
 
 [MIT License](./license) (c) Breno Sena

@@ -1,9 +1,9 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
+const { DefinePlugin } = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const OfflinePlugin = require('offline-plugin');
@@ -11,34 +11,13 @@ const config = require('./config.js');
 
 module.exports = merge(common, {
   mode: 'production',
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
-          'postcss-loader',
-          {
-            loader: 'sass-loader',
-          },
-        ],
-      },
-    ],
-  },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].bundle.css',
-      chunkFilename: '[name].bundle.css',
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      pngquant: {
+        quality: 80,
+      },
     }),
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
     new WebpackPwaManifest({
       name: config.pwa.name,
       short_name: config.pwa.short_name,
@@ -76,7 +55,9 @@ module.exports = merge(common, {
       },
     }),
     new FaviconsWebpackPlugin({
-      logo: './public/favicon.png',
+      logo: './static/favicon.png',
+      inject: true,
+      cache: true,
     }),
   ],
   optimization: {

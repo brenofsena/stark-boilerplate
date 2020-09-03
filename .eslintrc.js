@@ -3,10 +3,11 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:jest/recommended',
+    'plugin:cypress/recommended',
     'prettier',
     'prettier/react',
   ],
-  plugins: ['react', 'jest'],
+  plugins: ['react', 'jest', 'cypress'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 6,
@@ -22,6 +23,7 @@ module.exports = {
     amd: true,
     node: true,
     jest: true,
+    cypress: true,
   },
   settings: {
     react: {

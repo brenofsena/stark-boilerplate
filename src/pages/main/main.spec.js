@@ -1,10 +1,11 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from '../App';
+import { screen } from '@testing-library/react';
+import { renderWithTheme } from '../../utils/test/helpers';
+import Main from './main';
 
 describe('App Component', () => {
   test('Should start correctly', () => {
-    render(<App />);
+    renderWithTheme(<Main />);
     expect(screen.getByTestId('logo')).toBeInTheDocument();
   });
 });

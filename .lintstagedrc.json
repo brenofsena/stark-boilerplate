@@ -1,4 +1,3 @@
 {
-  "*.{js,jsx}": ["npm run lint:js", "pretty-quick --staged", "npm run test"],
-  "*.{scss}": ["npm run lint:scss"]
+  "*.{js,jsx}": ["npm run lint", "pretty-quick --staged", "npm run test"]
 }

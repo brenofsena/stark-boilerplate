@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 12
+addons:
+  packages:
+    - libgconf-2-4
+cache:
+  npm: true
+  directories:
+    - ~/.cache
+script:
+  - npm run lint
+  - npm run test:coveralls
+  - npm run test:cypress:ci
+
+notifications:
+  email: false

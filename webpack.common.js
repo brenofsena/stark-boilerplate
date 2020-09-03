@@ -1,7 +1,8 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+require('dotenv').config();
 
 module.exports = {
   watchOptions: {
@@ -49,21 +50,24 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+        ],
+      },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.scss'],
+    extensions: ['.js', '.jsx', '.css'],
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new StylelintPlugin({
-      failOnError: false,
-      configFile: path.resolve(__dirname, '.stylelintrc.json'),
-      context: path.resolve(__dirname, 'src'),
-      files: '**/*.scss',
-      syntax: 'scss',
-      quiet: false,
-    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './index.html'),
       inject: true,
