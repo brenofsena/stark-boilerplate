@@ -10,7 +10,6 @@ module.exports = {
     poll: 1000,
   },
   entry: {
-    polyfill: '@babel/polyfill',
     app: path.join(__dirname, 'src', 'index'),
   },
   output: {
