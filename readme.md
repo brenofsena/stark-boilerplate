@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/brenofsena/stark-boilerplate.svg?branch=master)](https://travis-ci.org/brenofsena/stark-boilerplate)
 [![Known Vulnerabilities](https://snyk.io/test/github/brenofsena/stark-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/brenofsena/stark-boilerplate?targetFile=package.json)
 
 <p align="center">
@@ -42,6 +43,7 @@ $ yarn dev
 - Jest
 - React Testing Library
 - Cypress
+- Faker
 - ESLint
 - StyleLint
 - Prettier
