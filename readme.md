@@ -1,3 +1,5 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/brenofsena/stark-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/brenofsena/stark-boilerplate?targetFile=package.json)
+
 <p align="center">
 <img src="./static/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
 </p>
@@ -35,6 +37,7 @@ $ yarn dev
 - React Router DOM
 - Styled Components
 - Polished
+- PropTypes
 - Apollo
 - Jest
 - React Testing Library
