@@ -51,7 +51,6 @@ $ yarn dev
 - Prettier
 - Husky
 - Lint Staged
-- Travis CI
-- Coveralls
+- Plop
 
 [MIT License](./license) (c) Breno Sena
