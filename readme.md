@@ -32,6 +32,8 @@ $ yarn dev
 - `test:cypress`: runs cypress to tests e2e
 - `generate component`: generate a component
 - `generate page`: generate a page
+- `generate hook`: generate a hook
+- `generate context`: generate a context
 
 > ### Built with
 
