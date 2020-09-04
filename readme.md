@@ -30,7 +30,8 @@ $ yarn dev
 - `test:watch`: runs jest in watch mode
 - `test:ci`: runs jest for code coverage
 - `test:cypress`: runs cypress to tests e2e
-- `generate`: generate component
+- `generate component`: generate a component
+- `generate page`: generate a page
 
 > ### Built with
 
