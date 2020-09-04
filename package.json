@@ -18,7 +18,8 @@
     "lint:js": "eslint --ext js,jsx --fix",
     "lint:css": "stylelint './src/**/*.js'",
     "lint": "npm run lint:js && npm run lint:css",
-    "check": "npm-check -u -s"
+    "check": "npm-check -u -s",
+    "generate": "yarn plop --plopfile generators/plopfile.js"
   },
   "author": "Breno Sena",
   "license": "MIT",
@@ -58,6 +59,7 @@
     "lint-staged": "^10.2.11",
     "npm-check": "^5.9.2",
     "offline-plugin": "^5.0.7",
+    "plop": "^2.7.4",
     "prettier": "^2.0.5",
     "pretty-quick": "^3.0.0",
     "prop-types": "^15.7.2",
