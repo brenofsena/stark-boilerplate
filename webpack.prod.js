@@ -1,7 +1,6 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
-const { DefinePlugin } = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const WebpackPwaManifest = require('webpack-pwa-manifest');
@@ -59,9 +58,6 @@ module.exports = merge(common, {
       inject: true,
       cache: true,
     }),
-    new DefinePlugin({
-      'process.env.API_URL': JSON.stringify(process.env.API_URL),
-    }),
   ],
   optimization: {
     minimize: true,
@@ -73,5 +69,8 @@ module.exports = merge(common, {
         sourceMap: true,
       }),
     ],
+    splitChunks: {
+      chunks: 'all',
+    },
   },
 });

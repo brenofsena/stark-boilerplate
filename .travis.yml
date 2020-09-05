@@ -13,5 +13,11 @@ script:
   - npm run test:coveralls
   - npm run test:cypress:ci
 
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API
+  app: my_app
+  skip_cleanup: true
+
 notifications:
   email: false

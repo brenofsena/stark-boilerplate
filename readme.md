@@ -1,10 +1,18 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/brenofsena/stark-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/brenofsena/stark-boilerplate?targetFile=package.json)
-
 <p align="center">
 <img src="./static/stark.png" alt="Stark Boilerplate" title="Stark Boilerplate" />
 </p>
 
+<p align="center" style="margin: 40px 0;">
+<a href="https://snyk.io/test/github/brenofsena/stark-boilerplate?targetFile=package.json"><img src="https://snyk.io/test/github/brenofsena/stark-boilerplate/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/brenofsena/stark-boilerplate?targetFile=package.json" style="max-width:100%;"></a>
+</p>
+
 > ## Stark Boilerplate
+
+This boilerplate is now ready to integrate with Travis, Heroku and Coveralls for CI/CD
+
+1. Create an account on [Heroku](https://www.heroku.com/), connect with your github and activate automatic deploy
+2. Create a [Travis](https://travis-ci.org/) account, add your repository and add your heroku key in the settings
+3. Create a [Coveralls](http://coveralls.io/) account and add your repository to code coverage
 
 > ### Getting Started
 
@@ -42,7 +50,6 @@ $ yarn dev
 - Styled Components
 - Polished
 - PropTypes
-- Apollo
 - Jest
 - React Testing Library
 - Cypress

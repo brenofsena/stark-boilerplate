@@ -80,20 +80,14 @@
     "webpack-pwa-manifest": "^4.1.1"
   },
   "dependencies": {
-    "@apollo/client": "^3.1.4",
-    "cross-fetch": "^3.0.5",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^2.0.0",
     "express": "^4.17.1",
     "express-history-api-fallback": "^2.2.1",
-    "graphql": "^15.3.0",
     "polished": "^3.6.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-hook-form": "^6.6.0",
     "react-router-dom": "^5.2.0",
-    "react-slick": "^0.27.10",
-    "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.1"
   }
 }
