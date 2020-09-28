@@ -64,6 +64,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.css'],
+    alias: {
+      '@': path.join(__dirname, 'src'),
+      '@assets': path.join(__dirname, 'static'),
+    },
   },
   plugins: [
     new CleanWebpackPlugin(),
