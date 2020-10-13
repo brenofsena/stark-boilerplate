@@ -1,6 +1,6 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-import { renderWithTheme } from '../../utils/test/helpers';
+import { renderWithTheme } from '@/utils/test/helpers';
 import Spinner from './spinner';
 
 describe('Spinner Component', () => {
