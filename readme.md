@@ -8,6 +8,7 @@
 
 > ## Stark Boilerplate
 
+This boilerplate is now ready to integrate with Travis, Heroku and Coveralls
 > ### Getting Started
 
 ```sh
