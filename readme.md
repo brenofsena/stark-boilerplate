@@ -9,18 +9,6 @@
 > ## Stark Boilerplate
 
 This boilerplate is now ready to integrate with Travis, Heroku and Coveralls
-> ### Getting Started
-
-```sh
-# Clone repository
-$ git clone https://github.com/brenofsena/stark-boilerplate my-project
-
-# install dependencies
-$ cd my-project && yarn install
-
-# run the project
-$ yarn dev
-```
 
 > ### Commands
 
